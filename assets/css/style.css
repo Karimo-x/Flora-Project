@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+header nav{
+    width: 100vw;
+    height: 90px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 70px;
+    z-index:100;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none ;
+    text-decoration: none;
+}
+
+nav ul a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #222222;
+}
+
+nav .but{
+    margin-right: 15px;
+    width: 135px;
+    height: 38px;
+    border-radius: 6px;
+    background-color: #025595;
+    color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+nav .barmob{
+    display: none;
+    background-color:none;
+    color: #025595;
+    font-size: 25px;
+}
+
+.hero{
+    background-image: url(../img/hero.bg.png); 
+    height:100vh ;
+    max-width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-left: 70px;
+    
+}
+
+header .hero h1{
+    max-width: 34.3125rem;
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: 80px;
+} 
+
+.hero p{
+    max-width: 423px;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 20px 0 50px 0;
+    color: #22222280;
+}
+
+.hero form{
+    max-width:866px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 58px; 
+    gap: 30px;
+    background-color: #fffffff1;
+}
+
+.hero form .card{
+    width: 206px; 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero form .text{
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero form .text label{
+    font-weight: 500;
+}
+
+.hero form .icon{
+    width: 60px;
+    height: 60px;
+    background-color: #0255951a;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero form svg{
+    font-size: 25px;
+    color: #025595ae;
+}
+
+.hero form .card .text input{
+    border: none;
+    line-height: 24px;
+    background-color: #ffffff00;
+    color: #222222;
+}
+
+main .about{
+    margin: 100px 70px;
+}
+
+main .about h1{
+    max-width:253px;
+    font-weight: 700;
+    font-size: 2.4375rem;
+    line-height: 47.2px;
+}
+
+main .about p.How{
+    color: #22222280;
+    max-width: 410px;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+main .about .container{
+    max-width:1226px ;
+    display: flex;
+    margin-top: 56px;
+}
+
+main .about .container div{
+    padding: 30px 40px 80px 40px;  
+    border-radius: 15px; 
+}
+
+
+main .about .container h2{
+    margin: 20px 0 10px 0; 
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26.63px;
+}
+
+main .about .container p{
+    font-size: 14px;
+    color: #22222280;
+    line-height: 24px;
+}
+
+main .about .container .white{
+    color: #ffffff;
+}
+
+main .about .container .select {
+    background-color:#025595; 
+}
+
+main .about .container .select svg{
+    font-size:40PX ;
+    color: #FFFFFF;
+} 
+
+
+main .service{
+    max-width:100vw; 
+    margin:100px 70px ;  
+}
+
+.service .find .txt h1{
+    max-width: 21.5rem;
+    font-weight: 700;
+    font-size: 2.4375rem;
+    line-height: 56px;
+}
+.service .find{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 57px;
+    align-items: center;
+}
+
+.service .find p{
+    color: #22222280;
+    font-size: 15px;
+    max-width: 390px;
+}
+
+.service .find button{
+    padding:13px 20px 13px 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: #025595;
+    color: #F5F5F5;
+    cursor: pointer;
+}
+main .service .serv-pic{
+    width: 100%;
+    height: 380px;
+    border-radius: 10px;
+    background-repeat: no-repeat; 
+    position: relative;
+    right:0;
+}
+
+
+main .service .serv-pic img.biggest{  
+    position: absolute;  
+    right: 0%;
+    border-radius:10px;
+}
+
+main .service .serv-pic .white-square{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:30px 0 30px 20px ;
+    width: 27.5rem;
+    height: 312px;
+    background-color: #fffffff4;
+    border-radius: 16px;
+    position: absolute; 
+    top: 10%;
+
+}
+
+.white-square .property h2{
+    width: 164px;
+    height: 24px;
+    margin: 24px 0 24px 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height:24.2px ;
+}
+
+.white-square .property .icons .mid{
+    margin:0 20px 0 20px ;
+}
+
+.white-square .site{
+    display: flex; 
+    gap: 10px;
+    max-width: 277px;
+}
+
+.white-square .site img{
+    width: 24px;
+    height: 24px;
+
+}
+.white-square .site p{
+    color: #222222;
+    font-size: 14px;
+    width: 203px;
+}
+
+
+main .NewProperty{
+    margin:100px 70px 100px 70px ; 
+}
+
+.NewProperty h1{
+    width: 17.3rem;
+    font-size: 700;
+    font-size:2.4375rem;
+    line-height:56px ;
+}
+
+.NewProperty p{
+    max-width:382px;
+    font-size: 15px;
+    line-height: 26px;
+    color: #22222280;
+}
+
+.NewProperty .container-6{
+    max-width:100vw;
+    margin-top: 56px;
+    padding-right:30px ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+main .NewProperty .container-6 .card-6{
+    height: 447px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #dddddd5d;    
+    padding: 20px;
+}
+
+main .NewProperty .container-6 .card-6 .above{
+    display: flex;
+    flex-direction: column;
+}
+
+main .NewProperty .container-6 .card-6 .above span{
+    color: #025595;
+    font-weight:600;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+main .NewProperty .container-6 .card-6 .above h2{
+    max-width:180px;
+    font-size: 1.125rem;
+    line-height: 29px;
+    font-weight: 600;
+}
+
+main .NewProperty .container-6 .card-6 .down{
+    display: flex;
+    align-items: center;
+}
+
+main .NewProperty .container-6 .card-6 .down p{
+    font-size: 14px; 
+    color: #222222; 
+    margin-left:15px ;
+} 
+
+main .deals{
+    margin: 0 70px 100px 70px;
+    max-width:100vw; 
+}
+
+main .deals h1{
+    max-width: 424px;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 47px;
+    color: #222222;
+}
+
+main .deals p{
+    font-size: 15px;
+    line-height: 26px;
+    color: #22222280;
+}
+
+main .deals ul{
+    list-style:none ;
+    display: flex;
+    gap: 50px;
+    margin: 56px 0 41px 0;
+}
+
+.deals ul li{
+    font-size: 18px;
+    color: #222222;
+    line-height: 22px;
+}
+
+.deals ul li:nth-child(1){
+    color: #025595;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    border-bottom:2px solid #025595 ;
+    padding-bottom: 15px;
+}
+
+main .deals .container-3{
+    display: flex;   
+    gap: 31px;
+    height: 300px;
+    max-width: 100%;
+}
+
+main .deals .container-3 .c3-img1{
+    background-image: url(../img/d-image1.png);
+}
+
+main .deals .container-3 .c3-img2{
+    background-image: url(../img/d-image2.png);
+}
+
+main .deals .container-3 .c3-img3{
+    background-image: url(../img/d-image3.png);
+}
+
+main .deals .container-3 div{
+    width: 32%;
+    border-radius: 5px;
+    padding: 14px 0 0 14px  ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .deals .container-3 button{
+    border-radius: 5px; 
+    border: 1px solid #FFFFFF;
+    color: #ffffff;
+    background-color: #22222266;
+    font-size: 12px;
+    line-height: 14.50px;
+    cursor: pointer;
+}
+
+main .deals .container-3 .big{
+    padding: 6px 12px;
+}
+
+main .deals .container-3 .small{
+    padding: 6px;
+    }
+
+main .contact{
+    display: flex; 
+    margin:0 70px 35px 70px ;
+    gap: 60px;
+    color: #222222;
+}
+    main .contact div{
+    display: flex;
+    flex-direction: column;
+}
+
+main .contact .foot-logo img{
+    width: 65px;
+}
+
+main .contact .foot-logo{
+    max-width: 350px;
+    gap: 26px;
+    color: #22222280;
+    font-size: 1rem;
+    line-height: 26px;
+}
+
+main .contact ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 15px;
+}
+
+main .contact h2{
+    margin-bottom: 1.25rem;
+    font-weight:700;
+    font-size: 20px;
+    line-height: 24.2px;
+}
+
+main .contact p{
+    line-height: 20px;
+    font-size: 13px;
+}
+
+
+main .contact .foot-location .foot-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+main .contact .foot-location .foot-icons div{
+    color: #FFFFFF;
+    background-color: #025595;
+    width: 48px;
+    height: 48px; 
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+}
+
+
+main .contact .foot-location .foot-icons div svg{
+    font-size: 20px;
+}
+
+footer{
+    max-width: 100vw;
+    border-top: 1px solid #2222221A ;
+    display: flex;
+    margin: 0 70px ;
+    justify-content: space-between;
+    height: 48px; 
+    align-items: center;
+}   
+
+footer p{
+    font-size: 13px;
+    line-height: 17px;
+}
+
+footer ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-size: 13px;
+    margin-top: 16px;
+}
+
+
+
+@media screen and (max-width:992px)  
+{
+
+html{
+    font-size: 10px;
+}
+
+header{
+    height: 800px;
+}
+
+header nav{
+    padding: 0 20px;   
+}
+
+nav ul a , nav .but{
+    display: none;
+}    
+
+nav .barmob{
+    display: block;
+}
+
+.hero form{
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero , .about , main .service , main .NewProperty ,main .deals , main .contact , footer{
+    padding:0;
+    margin:0;   
+}
+
+main .NewProperty , main .deals , main .contact{
+padding: 0 20px;
+}
+
+.hero h1 , .hero p{
+    margin-left: 21px;
+}
+
+.hero h1{
+    line-height: 50px; 
+    margin-top: 200px; 
+}
+
+main .container{
+    flex-direction: column;
+    width: 100%;
+}
+
+main .about {
+    height: 900px;
+    margin:0 20px;
+}
+
+main .about .container div{
+    padding: 15px 17.5px 30px 17.5px;
+}
+
+main .service{
+    height: 720px;
+}
+
+main .service .txt{
+    margin: 0 20px;
+}
+
+main .service .serv-pic{
+    width:100% ;
+}
+
+main .service .serv-pic .white-square{
+    width:100vw ; 
+    top:55% ;
+}
+
+main .service .find button{
+    display: none;
+}
+
+main .NewProperty{
+    height: 3100px;    
+}
+
+main .NewProperty .Newproperty-txt{
+    padding-left:20px;    
+}
+
+.NewProperty .container-6{
+    width: 90vw;
+    flex-direction: column;
+}
+
+main .NewProperty .container-6 .card-6{
+    width:108% ;/* 261px */
+}
+
+main .NewProperty .container-6 .card-6 .above img{
+    width: 221px;
+    height: 190px;
+}
+
+main .NewProperty .container-6 .card-6 .above h2{
+    max-width: 237px;
+    font-size: 16px;
+}
+
+main .deals{
+    height: 1100px;
+}
+
+main .deals .container-3{
+    flex-direction: column;
+    height: 745px;
+}
+
+main .deals .scroll{
+    overflow: auto;
+    white-space: nowrap;
+}
+
+main .deals .container-3 div{
+    width:260px;
+    height: 235px;
+}
+
+main .contact{
+    flex-direction: column;   
+}
+
+footer{
+    margin: 35px 0 15px 0;
+    padding:15px 0 ;
+    flex-direction: column;
+}
+
+}
